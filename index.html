@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div id="input-box-1" class="gener-info">
+                <div class="descr-box">
+                    <div class="total-price total-price-box-1" id="input-price-box-1">5€</div>
+                    <div class="percent">1,0% p.a.</div>
+                </div>
+            </div>
+            <div id="input-box-2" class="gener-info">
+                <div class="descr-box">
+                    <div class="total-price total-price-box-2" id="input-price-box-2">12€</div>
+                    <div class="percent">2,4 % p.a.</div>
+                </div>
+            </div>
+            <div id="input-box-3" class="gener-info">
+                <div class="descr-box">
+                    <div class="total-price total-price-box-3" id="input-price-box-3">38€</div>
+                    <div class="percent">7.50 % p.a.</div>
+                </div>
+            </div>
+        </div>
+        <div class="under-wrapper">
+            <div class="box-wrapper">
+                <div class="info-box info-box-1">FESTGELD</div>
+            </div>
+            <div class="box-wrapper">
+                <div class="info-box info-box-2">RENTEN-<br>VERSICHERUNG</div>
+            </div>
+            <div class="box-wrapper">
+                <div class="info-box info-box-3">YNTO</div>
+            </div>
+        </div>
+        <div class="wrapper-range">
+            <input id="range-1" type="range" min="500" value ="500" max="25000" step="50" oninput="func1()">
+            <div class="progress"></div>
+        </div>
+
+        <div class="range-border">
+            <div class="range-value">500 €</div>
+            <div class="range-value">25.000 €</div>
+        </div>
+        <div id="price-range">
+            <div id="price" class="total-price">500€</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
